@@ -1,0 +1,5 @@
+<mat-progress-spinner value="40"></mat-progress-spinner>
+<!-- <mat-spinner *ngIf="showSpinner"></mat-spinner> -->
+<mat-progress-bar *ngIf="showSpinner" mode="indeterminate"></mat-progress-bar>
+
+<button (click)="loadData()" mat-raised-button>Load</button>

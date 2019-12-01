@@ -7,7 +7,8 @@ import {
   MatIconModule,
   MatProgressSpinnerModule,
   MatToolbarModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatMenuModule
 } from '@angular/material';
 
 
@@ -18,7 +19,8 @@ const MaterialComponents = [MatButtonModule,
   MatProgressSpinnerModule,
   MatProgressBarModule,
   MatToolbarModule,
-  MatSidenavModule];
+  MatSidenavModule,
+  MatMenuModule];
 @NgModule({
   exports: [MaterialComponents],
   imports: [MaterialComponents

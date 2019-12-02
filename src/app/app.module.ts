@@ -28,6 +28,8 @@ import { CheckboxRadioComponent } from './checkbox-radio/checkbox-radio.componen
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -53,8 +55,11 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     CheckboxRadioComponent,
     DatePickerComponent,
     TooltipComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    DialogComponent,
+    DialogExampleComponent
   ],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

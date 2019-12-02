@@ -23,7 +23,8 @@ import {
   MatCheckboxModule,
   MatRadioModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatTooltipModule
 } from '@angular/material';
 
 
@@ -50,7 +51,8 @@ const MaterialComponents = [MatButtonModule,
   MatCheckboxModule,
   MatRadioModule,
   MatDatepickerModule,
-  MatNativeDateModule];
+  MatNativeDateModule,
+  MatTooltipModule];
 @NgModule({
   exports: [MaterialComponents],
   imports: [MaterialComponents

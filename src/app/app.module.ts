@@ -24,6 +24,7 @@ import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
 import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
+import { CheckboxRadioComponent } from './checkbox-radio/checkbox-radio.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AutoCompleteComponent } from './auto-complete/auto-complete.component';
     StepperComponent,
     InputComponent,
     SelectComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    CheckboxRadioComponent
   ],
   imports: [
     BrowserModule,

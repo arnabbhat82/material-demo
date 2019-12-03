@@ -27,8 +27,16 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class DataTableComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  // displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  // displayedColumns: string[] = ['position', 'name', 'weight'];
+  displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
+
+
   dataSource = ELEMENT_DATA;
+
+  logData(row) {
+    console.log(row);
+  }
 
   constructor() { }
 

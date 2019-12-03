@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTableDataSource, MatSort } from '@angular/material';
 
 export interface PeriodicElement {
   name: string;
@@ -28,6 +28,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class DataTableComponent implements OnInit {
 
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
+
+
   // displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   // displayedColumns: string[] = ['position', 'name', 'weight'];
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
@@ -42,10 +45,10 @@ export class DataTableComponent implements OnInit {
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-
+  ngOnInit() {
+    this.dataSource.sort = this.sort;
+  }
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }

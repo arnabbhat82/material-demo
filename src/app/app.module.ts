@@ -31,6 +31,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { DataTableComponent } from './data-table/data-table.component';
+import { CssGridComponent } from './css-grid/css-grid.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { DataTableComponent } from './data-table/data-table.component';
     SnackbarComponent,
     DialogComponent,
     DialogExampleComponent,
-    DataTableComponent
+    DataTableComponent,
+    CssGridComponent
   ],
   entryComponents: [DialogExampleComponent],
   imports: [
